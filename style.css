@@ -10,6 +10,65 @@
   src: url(RB\ Bold.ttf);
 }
 
+:root {
+	--hue: 200;
+	--bg: hsl(var(--hue),20%,20%);
+	--fg: hsl(var(--hue),10%,10%);
+	--primary: hsl(var(--hue),100%,50%);
+	--trans-dur: 0.3s;
+	font-size: calc(20px + (32 - 16) * (100vw - 320px) / (2560 - 320));
+}
+
+.bike {
+	background-color: #fff;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  padding:  0px 800px ;
+}
+.bike__body,
+.bike__front,
+.bike__handlebars,
+.bike__pedals,
+.bike__pedals-spin,
+.bike__seat,
+.bike__spokes,
+.bike__spokes-spin,
+.bike__tire {
+	animation: bikeBody 3s ease-in-out infinite;
+	stroke: #1F55A5;
+	transition: stroke var(--trans-dur);
+}
+.bike__front {
+	animation-name: bikeFront;
+}
+.bike__handlebars {
+	animation-name: bikeHandlebars;
+}
+.bike__pedals {
+	animation-name: bikePedals;
+}
+.bike__pedals-spin {
+	animation-name: bikePedalsSpin;
+}
+.bike__seat {
+	animation-name: bikeSeat;
+}
+.bike__spokes,
+.bike__tire {
+	stroke: #FFC60A;
+}
+.bike__spokes {
+	animation-name: bikeSpokes;
+}
+.bike__spokes-spin {
+	animation-name: bikeSpokesSpin;
+}
+.bike__tire {
+	animation-name: bikeTire;
+}
+
 header {
   background-image: url(BG.jpg);
   background-size: cover;
