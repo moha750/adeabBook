@@ -1,3 +1,9 @@
+ var loader = document.getElementById("preloader");
+
+ window.addEventListener("load", function(){
+   loader.style.display = "none";
+});
+
 var pages = document.getElementsByClassName('page');
   for(var i = 0; i < pages.length; i++)
     {
