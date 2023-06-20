@@ -1,3 +1,9 @@
+var loader = document.getElementById("preloader");
+
+window.addEventListener("load", function(){
+  loader.style.display = "none";
+});
+
 import { PageFlip } from "https://cdn.skypack.dev/page-flip@2.0.7";
 
 const pageFlip = new PageFlip(document.getElementById("holidayList"), {
