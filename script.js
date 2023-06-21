@@ -9,12 +9,15 @@ import { PageFlip } from "https://cdn.skypack.dev/page-flip@2.0.7";
 const pageFlip = new PageFlip(document.getElementById("holidayList"), {
 	width: 550, // base page width
 	height: 779, // base page height
-
+  
 	size: "stretch",
 	// set threshold values:
 	maxShadowOpacity: 0.5,
 	showCover: true,
 	mobileScrollSupport: true,
+  startPage: 45,
+  usePortrait:true,
+  drawShadow: true,
 });
 
 pageFlip.loadFromHTML(document.querySelectorAll(".holiday-item"));
