@@ -1,8 +1,14 @@
-var loader = document.getElementById("preloader");
+window.addEventListener("load", () => {
+  const loader = document.querySelector(".preloader");
 
-window.addEventListener("load", function(){
-  loader.style.display = "none";
+  loader.classList.add("preloader-hidden");
+
+  loader.addEventListener("transitionend", () => {
+    document.body.removeChild(loader);
+  });
 });
+
+
 
 import { PageFlip } from "https://cdn.skypack.dev/page-flip@2.0.7";
 
