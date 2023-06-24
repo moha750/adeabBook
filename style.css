@@ -290,14 +290,6 @@
   }
 }
 
-.text {
-  color: #ffc612;
-  text-align: center;
-  padding-top: 20px;
-  font-size: 28px;
-  font-family: MyFont0;
-}
-
 header {
   background-image: url(BG.jpg);
   background-size: cover;
